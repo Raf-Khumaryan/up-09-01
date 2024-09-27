@@ -1,0 +1,88 @@
+// Переменные
+$primary-color: #4A90E2;
+$secondary-color: #FFFFFF;
+$border-color: #E0E0E0;
+$font-color: #333;
+$button-hover-color: darken($primary-color, 10%);
+
+// Основные стили
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F4F6F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: $secondary-color;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    
+    h2 {
+        text-align: center;
+        color: $primary-color;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: $font-color;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid $border-color;
+            border-radius: 4px;
+            font-size: 14px;
+            color: $font-color;
+            transition: border-color 0.3s;
+
+            &:focus {
+                border-color: $primary-color;
+                outline: none;
+            }
+        }
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: $primary-color;
+        color: $secondary-color;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $button-hover-color;
+        }
+    }
+
+    p {
+        text-align: center;
+        margin-top: 20px;
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

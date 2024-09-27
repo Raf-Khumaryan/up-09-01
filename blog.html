@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог</title>
+    <link rel="stylesheet" href="blog.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="images/лого УП09.png" alt="logo"></a>
+        <div class="menu-container">
+            <ul>
+                <li><a href="uslugi.html">Услуги</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </div>
+        <a href="php/login.php" class="login">Войти</a>
+    </nav>
+
+    <section class="portfolio-block">
+      <div class="container-h2">
+        <h2 class="subtitle">Блог</h2>
+      </div>
+
+      <div class="discriptions-container">
+        <p class="discription">Пресс-релизы <strong>Компании IT-Online</strong></p>
+      </div>
+
+      <div class="container">
+        <div class="first-row">
+          <div class="blog-block-1">
+            <img src="images/blog-1.png" alt="blog-1">
+            <p class="blog-text-1">IT-Online становится партнером 1-го уровня по продуктам Р7-Офис</p>
+          </div>
+
+          <div class="blog-block-2">
+            <img src="images/blog-2.png" alt="blog-2">
+            <p class="blog-text-2">Платформа vStack стала партнером компании «IT-Online», занимающейся импортозамещением зарубежных решений </p>
+          </div>
+
+          <div class="blog-block-3">
+            <img src="images/blog-3.png" alt="blog-3">
+            <p class="blog-text-3">ITSM box поможет IT-Online предложить заказчикам «умную» автоматизацию сервисных процессов</p>
+          </div>
+        </div>
+
+        <div class="second-row">
+          <div class="blog-block-4">
+            <img src="images/blog-4.png" alt="blog-4">
+            <p class="blog-text-4">SimpleOne заключила партнёрское соглашение с IT-Online</p>
+          </div>
+        </div>
+      </div>
+
+      </section>
+
+      <div class="popup" id="callback-popup">
+        <div class="popup-content">
+            <span class="close-popup-btn" id="close-popup">&times;</span>
+            <h2>Обратный звонок</h2><br>
+            <form class="popup-form" action="#" method="post">
+                <label for="phone">Введите ваш номер телефона:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required pattern="^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$">
+                <input type="submit" value="Заказать звонок">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+      <a href="index.html" class="logo"><img src="images/лого УП09.png" alt="logo"></a>
+      <div class="menu-container">
+          <ul class="footer-menu">
+              <li><a href="uslugi.html">Услуги</a></li>
+              <li><a href="portfolio.html">Портфолио</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+          </ul>
+          <p class="copywriting">© IT Online. Все права защищены 2024 год. Москва</p>
+      </div>
+
+      <div class="contacts-block">
+        <p class="contact">Контакты:<br><br>
+          Телефон: +7 (495) 123 45 67<br><br>
+          Email: isip_r.s.humaryan@mpt.ru</p><br>
+          <button type="submit" class="open-popup-btn">📞 Обратный звонок</button>
+      </div>
+    </footer>
+</body>
+</html>
